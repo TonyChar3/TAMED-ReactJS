@@ -1,0 +1,139 @@
+    /*Layout*/
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+    
+.footer__emailAbout-links{
+    padding: .5em;
+    font-size: 1.1rem;
+}
+
+.footer__emailAbout-links > h4{
+    margin: 0;
+    margin-top: .5em;
+}
+    
+.footer__icons{
+    display: flex;
+    margin: 0;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+    
+.footer__icons > li{
+    list-style: none;
+    padding: .5em;
+    font-size: 1.1rem;
+}
+    
+.footer__copyright{
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    background-color: black;
+}
+    /*Typography*/
+#footer__emailLink{
+    color:rgb(182, 141, 53);
+}
+    
+#footer__span-mission{
+    color: white;
+}
+    
+.footer__icons li > a{
+    color: white;
+}
+    
+.footer__copyright h5 > a{
+    color: rgb(182, 141, 53);
+    letter-spacing: 1px;
+}
+
+.footer__copyright > h5{
+    margin: 0;
+}
+
+.footer__copyright > h5:last-of-type{
+    margin-bottom: 1em;
+}
+
+/*Tablets*/
+@media(min-width: 768px){
+     /*Footer*/
+     .footer__emailAbout-links{
+        font-size: 1.3rem;
+    }
+
+    .footer__copyright{
+        font-size: 1.4rem;
+    }   
+}
+
+/*Low resolution desktops*/
+@media (min-width: 1024px){
+    /*Footer*/
+        /*Typography*/
+        .footer__emailAbout-links{
+            font-size: 1.6rem;
+        }
+
+        .footer__icons > li{
+            font-size: 1.3rem;
+        }
+
+        #footer__span-mission:hover{
+            margin-bottom: 1em;
+            font-size: 1.9rem;
+            color: rgb(182, 141, 53);
+            border-bottom: 2px solid white;
+            transition: all 0.3s ease;
+        }
+
+        .footer__icons li > a:hover{
+            color: rgb(182, 141, 53);
+            border-bottom: 2px solid white;
+            transition: 0.3s;
+        }
+
+        .footer__copyright h5{
+            font-size: 1.1rem;
+        }
+
+        .footer__copyright h5 > a:hover{
+            padding: .5em;
+            border-bottom: 2px solid white;
+            transition: 0.3s;
+        }
+}
+
+/*High resolution desktops*/
+@media (min-width: 1281px){
+    /*Footer*/
+    .footer__container{
+        height: 30vh;
+    }
+
+    .footer__emailAbout-links{
+        padding: .8em;
+        font-size: 1.5rem;
+    }
+
+    .footer__icons li > a{
+        /* padding: 1em; */
+        font-size: 1.3rem;
+    }
+
+    #footer__span-mission:hover{
+        font-size: 1.8rem;
+    }
+}

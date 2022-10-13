@@ -1,0 +1,423 @@
+/*Index page content*/
+
+    /*Layout*/
+    .top-page-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100vh;
+        background-image: url(../../img/pexels-victor-freitas-791763.jpg);
+        background-size: cover;
+        background-position: 50% 20%;
+        background-attachment: fixed;
+        transition: 0.3s;
+    }
+    
+    .img-container{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        row-gap: 1em;
+        justify-items: center;
+        width: 100%;
+        margin-top: 1em;
+    }
+    
+    .img-container > img{
+        width: 80%;
+    }
+    
+    #prodct-img2{
+        border-radius: 15px;
+        animation: LoadinIn;
+        animation-duration: 0.6s;
+    }
+    
+    #prodct-img1{
+        border-radius: 20px;
+        animation: LoadinIn;
+        animation-duration: 0.6s;
+    }
+    
+    .container{
+        text-align: center;
+        margin: 1em auto;
+        padding: .5em;
+        color: black;
+        font-size: 1.05rem;
+        animation: LoadinIn;
+        animation-duration: 0.6s;
+        font-family: 'Bebas Neue';
+    }
+    .menu__about{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu__team-pic{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /*Special container for the Mission page*/
+    .mission__container{
+        width: 80%;
+        text-align: center;
+        margin: 1em auto;
+        padding: .5em;
+        background-color: rgba(96, 94, 94, 0.615);
+        color: black;
+        font-size: 1.05rem;
+        font-family: 'Bebas Neue';
+        border-radius:  15px;
+        box-shadow: 0 15px 20px rgb(182, 141, 53);
+        animation: ShiningGold;
+        animation-timing-function: ease-in;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+    }
+    
+    @keyframes ShiningGold{
+    
+        0%{
+            box-shadow: 0 5px 10px rgb(182, 141, 53);
+        }
+    
+        100%{
+            box-shadow: 0 15px 20px rgb(182, 141, 53);
+        }
+    }
+    
+    .menu__about > .container:first-of-type{
+        background-color: rgb(113, 112, 112);
+        border-top: 5px solid rgb(151, 150, 149);
+        border-bottom: 5px solid rgb(151, 150, 149);
+        border-radius: 15px;
+    }
+    
+    .menu__about > .container:nth-child(2){
+        display: none;
+    }
+    
+    .menu__team-pic > .container:nth-child(2){
+        width: 100%;
+        position: absolute;
+        top: 12%;
+        height: 150px;
+        z-index: -20;
+        background-color: rgba(255, 255, 255, 0.525);
+        border-top: 5px solid rgb(182, 141, 53);
+        border-bottom: 5px solid rgb(182, 141, 53);
+    }
+    
+    #team-pic{
+        width: 90%;
+        z-index: 10;
+        border-radius: 15px;
+    }
+    
+    .icons-container{
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        margin: .3em auto;
+        font-size: 1.3rem;
+        color: white;
+    }
+    
+    .icons-container > a{
+        color: white;
+    }
+    
+        /*Typography*/
+    .top-message{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-welcome{
+        margin: 0;
+        margin-bottom: .5em;
+        color: white;
+        letter-spacing: 2px;
+        font-size: 2rem;
+    }
+    
+    #prodct-desc1{
+        align-self: center;
+        justify-self: flex-start;
+        text-align: center;
+        border-bottom: 3px solid rgb(182, 141, 53);
+        font-size: 1.4rem;
+        transition: 0.3s;
+    }
+    
+    #prodct-desc2{
+        align-self: center;
+        justify-self: flex-end;
+        text-align: center;
+        font-size: 1.4rem;
+        border-bottom: 3px solid rgb(182, 141, 53);
+        transition: 0.3s;
+    }
+    
+    #color-container{
+        width: 80%;
+        height: 2px;
+        margin: 2em auto;
+        background-color: rgb(182, 141, 53);
+    }
+    
+    .container > h3, .mission__container > h3{
+        margin-bottom: .5em;
+        font-size: 2.2rem;
+        font-weight: 550;
+        letter-spacing: 1px;
+        color: rgb(248, 247, 246);
+    }
+    
+    .container > span, .mission__container > span{
+        color: rgb(204, 154, 47);
+        font-size: 1.4rem;
+    }
+    
+    #imgGrid__title{
+        width: 75%;
+        text-align: center;
+        margin: 1em auto;
+        border-bottom: 2px solid rgb(182, 141, 53);
+        font-size: 1.2rem;
+        color: rgb(182, 141, 53);
+    }
+    
+        /*Buttons*/
+    .shop-now-btn{
+        /* margin: .5em 0; */
+        padding: .5em;
+        border-radius: 15px;
+        border: none;
+        font-family: 'Bebas Neue';
+        background-color: rgb(182, 141, 53);
+    }
+    
+    .shop-now-btn > a{
+        color: white;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+
+
+@media(min-width: 765px){
+    /*Index page Content*/
+        /*Layout*/
+
+        #team-pic{
+            width: 70%;
+        }
+
+        .menu__about > .container:first-of-type{
+            width: 60%;
+        }
+
+        .menu__about > .container:nth-child(2){
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 6%;
+            height: 230px;
+            z-index: -20;
+            background-color: rgba(255, 255, 255, 0.525);
+            border-top: 8px solid rgb(182, 141, 53);
+            border-bottom: 8px solid rgb(182, 141, 53);
+        }
+
+        .menu__team-pic > .container:nth-child(2){
+            width: 100%;
+            position: absolute;
+            top: 12%;
+            height: 230px;
+            z-index: -20;
+            background-color: rgba(255, 255, 255, 0.525);
+            border-top: 8px solid rgb(182, 141, 53);
+            border-bottom: 8px solid rgb(182, 141, 53);
+        }
+
+        /*Typography*/
+
+        .main-welcome{
+            font-size: 5rem;
+        }
+
+        .shop-now-btn > a{
+            font-size: 1.8rem;
+        }
+
+        #prodct-desc1{
+            font-size: 2.2rem;
+        }
+
+        #prodct-desc2{
+            font-size: 2.2rem;
+        }
+
+        .container >h3{
+            font-size: 2.6rem;
+        }
+
+        .container{
+            font-size: 1.4rem;
+        }
+
+        .icons-container{
+            font-size: 1.2rem;
+        }
+
+        #imgGrid__title{
+            font-size: 1.8rem;
+        }
+}
+
+@media(min-width: 1024px){
+    /*Index page content*/
+
+        /*Layout*/
+        .container{
+            width: 60%;
+            padding: 1em;
+            font-size: 1.5rem;
+        }
+
+        .menu__about > .container:nth-child(2){
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 12%;
+            height: 230px;
+            z-index: -20;
+            background-color: rgba(255, 255, 255, 0.525);
+            border-top: 10px solid rgb(182, 141, 53);
+            border-bottom: 10px solid rgb(182, 141, 53);
+        }
+
+        .menu__team-pic > .container:nth-child(2){
+            position: absolute;
+            top: 18%;
+            height: 230px;
+            background-color: rgba(255, 255, 255, 0.525);
+            border-top: 10px solid rgb(182, 141, 53);
+            border-bottom: 10px solid rgb(182, 141, 53);
+        }
+
+        #team-pic{
+            width: 100%;
+        }
+
+        .img-container > img{
+            width: 70%;
+        }
+
+        /*Typography*/
+        .main-welcome{
+            font-size: 6rem;
+        }
+
+        #prodct-desc1{
+            font-size: 2rem;
+        }
+
+        #prodct-desc2{
+            font-size: 2rem;
+        }
+
+        #color-container{
+            width: 60%;
+            height: 3px;
+        }
+
+        .icons-container{
+            font-size: 1.8rem;
+        }
+
+        /*Buttons*/
+        .shop-now-btn > a{
+            font-size: 2rem;
+        }
+}
+
+@media(min-width: 1281px){
+    /*Index page*/
+    .menu__about > .container:first-of-type{
+        width: 40%;
+        margin-right: 10em;
+    }
+
+    .menu__about > .container:nth-child(2){
+        width: 70%;
+        align-self: flex-end;
+        border-radius: 15px;
+    }
+
+    .menu__team-pic > .container:nth-child(2){
+        width: 70%;
+        align-self: flex-start;
+        border-radius: 15px;
+    }
+
+    .mission__container{
+        width: 45%;
+        padding: 1em;
+        margin: 2em auto;
+        font-size: 1.4rem;
+    }
+
+    .mission__container > h3{
+        font-size: 3rem;
+    }
+
+    .mission__container > span{
+        font-size: 2rem;
+    }
+
+    .img-container{
+        width: 60%;
+        margin: 1.5em auto;
+    }
+
+    .img-container > img{
+        width: 70%;
+    }
+
+    #prodct-img1{
+        margin-left: 10em;
+        margin-right: 2em;
+    }
+
+    #prodct-img2{
+        margin-right: 10em;
+        margin-left: 2em;
+    }
+
+    #team-pic{
+        width: 60%;
+        margin-right: 20em;
+    }
+
+    .icons-container{
+        width: 25%;
+    }
+
+    #imgGrid__title{
+        width: 60%;
+        font-size: 2rem;
+        border-bottom: 3px solid rgb(182, 141, 53);
+    }
+}
