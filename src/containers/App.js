@@ -1,5 +1,5 @@
-import Navbar from '../components/navbar';
-import Footer from '../components/footer';
+import Navbar from '../components/Navbar/navbar';
+import Footer from '../components/Footer/footer';
 import Menu from '../components/menu/menu';
 import Shop from '../components/shopping/shopping';
 
