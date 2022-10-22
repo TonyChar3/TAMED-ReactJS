@@ -257,6 +257,10 @@
     .cart-i-container i{
         font-size: 2rem;
     }
+
+    .shop-container{
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 1024px){
@@ -276,5 +280,9 @@
 @media (min-width: 1281px) {
     .cart-i-container{
         height: 25vh;
+    }
+
+    .shop-container{
+        max-width: 80%;
     }
 }

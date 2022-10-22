@@ -16,8 +16,10 @@ function Card({id, title, price, descript, url, img}){
                 data-item-name={ title }
                 data-item-custom1-name="Couleur"
                 data-item-custom1-options="Rouge|Or|Blanche"
+                data-item-custom2-name="Grandeur"
+                data-item-custom2-options="L|XL|M|SM"
                 data-item-taxes="TPS|TVQ">PANIER+</button>
-            <button className="more-btn"><Link to={`/${ id }`}>Voir +</Link></button>  
+            <button className="more-btn"><Link to={`/Products/${ id }`}>Voir +</Link></button>  
         </div> 
     );
 }

@@ -2,18 +2,15 @@ import './see_more.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-function Belts(){
+function Straps(){
     const [MainImg, setMain] = useState('/img/belt1.jpg')
 
     const ChangeImg = (img) => {
         setMain(img)
     }
 
-
-
     return(
         <>
-
         <div className="plus__container">
             <div className="return__btn">
                 <Link to="/shopping">
@@ -31,36 +28,31 @@ function Belts(){
                     <img className='main__img' src={MainImg} alt="Main prodct" />
                 </div>
             </div>
-
             <div className="detailsBtn__container">
                 <div className="Descrip__container">
-                    <h4>Ceinture de support, qualité suppérieure en cuire et grosse attache en aluminium pour tenir le tout.</h4>
+                    <h4>Bandes en tissue tressé double, capable de supporter votre poignet tout en gardant un certain comfort lors de PR.</h4>
                 </div>
                 <div className="NamePrice__container">
-                    
-                    <h3>Ceinture</h3>
+                    <h3>Bandes de poignet</h3>
                     <h4>- $150.99 -</h4>
                 </div>
 
                 <button className="prodct-btn snipcart-add-item"
-                id="belts"
-                data-item-id="belts"
+                id="straps"
+                data-item-id="straps"
                 data-item-price="150.99"
                 data-item-url="/"
                 data-item-description="Ceinture de support, qualité suppérieure en cuire et grosse attache en aluminium pour tenir le tout."
-                data-item-image="/img/belt1.jpg"
-                data-item-name="Ceinture"
+                data-item-image="/img/belt3.jpg"
+                data-item-name="Bandes de poignet"
                 data-item-custom1-name="Couleur"
                 data-item-custom1-options="Rouge|Or|Blanche"
-                data-item-custom2-name="Grandeur"
-                data-item-custom2-options="L|XL|M|SM"
                 data-item-taxes="TPS|TVQ">PANIER+</button>
             </div>
         </div>
-
 
         </>
     );
 }
 
-export default Belts;
+export default Straps;
