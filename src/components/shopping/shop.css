@@ -20,16 +20,15 @@
     }
     
     .product-container{
+        position: relative;
         display: flex;
         flex-direction: column;
         width: 360px;
         align-self: normal;
         background: #4a49492d;
-        z-index: -10;
         border: .2px solid rgba(185, 185, 185, 0.438);
         border-radius: 15px;
         backdrop-filter:blur(5px);
-        position: relative;
         filter:drop-shadow(0 1.25rem 1.25rem rgba(255, 255, 255, 0.623));
         padding: 1em;
         animation: LoadinIn;
@@ -98,6 +97,27 @@
         font-size: 1.1rem;
         color: black;
         background-color: rgb(182, 141, 53);
+        cursor: pointer;
+    }
+
+    .more-btn{
+        width: 80px;
+        margin-top: .5em;
+        padding: .05em;
+        border-radius: 15px;
+        border: 2px solid white;
+        font-family: 'Bebas Neue';
+        font-size: 1.1rem;
+        color: black;
+        background-color: rgb(182, 141, 53);
+        cursor: pointer;
+    }
+
+    .more-btn > a{
+        color: black;
+    }
+
+    button{
         cursor: pointer;
     }
     

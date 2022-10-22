@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar/navbar';
 import Footer from '../components/Footer/footer';
 import Menu from '../components/menu/menu';
 import Shop from '../components/shopping/shopping';
+import Mission from '../components/Mission/Mission';
 
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
@@ -26,6 +27,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Menu />} />
               <Route path='/shopping' element={<Shop />} />
+              <Route path='/mission' element={<Mission />} />
             </Routes>
           </div>)}
           <Footer />

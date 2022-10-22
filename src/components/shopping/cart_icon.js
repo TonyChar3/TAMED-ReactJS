@@ -1,8 +1,8 @@
 
 function Cart(){
     return(
-        <div className="cart-i-container snipcart-checkout">
-            <i className="bi bi-bag"></i>
+        <div className="cart-i-container snipcart-checkout ">
+            <i className="bi bi-bag snipcart-items-count"></i>
         </div>
     );
 }

@@ -1,21 +1,23 @@
-import Card from './prdct_cards';
 
-function CardList( {products} ){
+import Card from './card_prdct';
+
+function CardList({product}){
     return(
         <div className="shop-container">
             {
-                products.map((prdct, i) => {
+                product.map((user, i) => {
                     return(
-                        <Card
-
-                        key={i}
-                        id={products[i].id}
-                        name={products[i].name}
-                        price={products[i].price}
-                        descrip={products[i].descrip}
-                        img={products[i].image}
+                        <Card 
+                        key={product[i].id}
+                        id={product[i].id}
+                        title={product[i].title}
+                        price={product[i].price}
+                        descript={product[i].descrip}
+                        url={product[i].url}
+                        img={product[i].image}
                         />
                     )
+
                 })
             }
         </div>
