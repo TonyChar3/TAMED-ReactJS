@@ -16,7 +16,6 @@ function About(){
                     <i className="bi bi-snapchat"></i>
                 </div>
             </div>
-            <div className="container"></div>
         </div>  
     );
 }

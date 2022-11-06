@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 function Straps(){
-    const [MainImg, setMain] = useState('/img/belt1.jpg')
+    const [MainImg, setMain] = useState('/TAMED_img/385848283.PNG')
 
     const ChangeImg = (img) => {
         setMain(img)
@@ -21,9 +21,11 @@ function Straps(){
             <div className="seemore__container">
                 <div className="imgs__container">
                     <div className="slider__container">
-                        <img src="/img/belt1.jpg" onClick={() => ChangeImg('/img/belt1.jpg')} alt="Prodct" />
-                        <img src="/img/belt2.jpg" onClick={() => ChangeImg('/img/belt2.jpg')} alt="Prodct" />
-                        <img src="/img/belt3.jpg" onClick={() => ChangeImg('/img/belt3.jpg')} alt="Prodct" />
+                        <img src="/TAMED_img/IMG_9373-.jpg" onClick={() => ChangeImg('/TAMED_img/IMG_9373-.jpg')} alt="Prodct" />
+                        <img src="/TAMED_img/12228372.PNG" onClick={() => ChangeImg('/TAMED_img/12228372.PNG')} alt="Prodct" />
+                        <img src="/TAMED_img/IMG_9358-.jpg" onClick={() => ChangeImg('/TAMED_img/IMG_9358-.jpg')} alt="Prodct" />
+                        <img src="/TAMED_img/IMG_9640-.jpg" onClick={() => ChangeImg('/TAMED_img/IMG_9640-.jpg')} alt="Prodct" />
+                        <img src="/TAMED_img/IMG_9334-.jpg" onClick={() => ChangeImg('/TAMED_img/IMG_9334-.jpg')} alt="Prodct" />
                     </div>
                     <img className='main__img' src={MainImg} alt="Main prodct" />
                 </div>
@@ -38,12 +40,12 @@ function Straps(){
                 </div>
 
                 <button className="prodct-btn snipcart-add-item"
-                id="straps"
-                data-item-id="straps"
+                id="wraps"
+                data-item-id="wraps"
                 data-item-price="150.99"
                 data-item-url="/"
                 data-item-description="Ceinture de support, qualité suppérieure en cuire et grosse attache en aluminium pour tenir le tout."
-                data-item-image="/img/belt3.jpg"
+                data-item-image="/TAMED_img/385848283.PNG"
                 data-item-name="Bandes de poignet"
                 data-item-custom1-name="Couleur"
                 data-item-custom1-options="Rouge|Or|Blanche"

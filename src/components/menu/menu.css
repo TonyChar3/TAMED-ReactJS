@@ -7,10 +7,12 @@
         align-items: center;
         justify-content: space-around;
         height: 100vh;
-        background-image: url(../../../public/img/pexels-victor-freitas-791763.jpg);
+        background-image: url(../../../public/TAMED_img/Image[303].jpeg);
+        background-blend-mode: multiply;
         background-size: cover;
         background-position: 50% 20%;
         background-attachment: fixed;
+        background-color: rgba(0, 0, 0, 0.097);
         transition: 0.3s;
     }
     
@@ -21,10 +23,18 @@
         justify-items: center;
         width: 100%;
         margin-top: 1em;
+
     }
     
     .img-container > img{
         width: 80%;
+        box-shadow: 0 15px 20px rgb(182, 141, 53);
+        animation: ShiningGold;
+        animation-timing-function: ease-in;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+
     }
     
     #prodct-img2{
@@ -49,11 +59,27 @@
         animation-duration: 0.6s;
         font-family: 'Bebas Neue';
     }
+
     .menu__about{
         width: 100%;
         position: relative;
         display: flex;
         flex-direction: column;
+        padding: .5em;
+        background-image: url(../../../public/TAMED_img/pexels-leon-ardho-1552252.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-blend-mode: multiply;
+        background-color: rgba(38, 38, 38, 0.469);
+    }
+
+    .menu__about > .container:first-of-type{
+        color: black;
+        background-color: rgba(255, 255, 255, 0.89);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 15px 20px black;
     }
     
     .menu__team-pic{
@@ -62,6 +88,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        border: 2px solid magenta;
     }
     
     /*Special container for the Mission page*/
@@ -94,17 +121,6 @@
         }
     }
     
-    .menu__about > .container:first-of-type{
-        background-color: rgb(113, 112, 112);
-        border-top: 5px solid rgb(151, 150, 149);
-        border-bottom: 5px solid rgb(151, 150, 149);
-        border-radius: 15px;
-    }
-    
-    .menu__about > .container:nth-child(2){
-        display: none;
-    }
-    
     .menu__team-pic > .container:nth-child(2){
         width: 100%;
         position: absolute;
@@ -128,11 +144,11 @@
         width: 40%;
         margin: .3em auto;
         font-size: 1.3rem;
-        color: white;
+        color: rgb(182, 141, 53);
     }
     
     .icons-container > a{
-        color: white;
+        color: rgb(182, 141, 53);
     }
     
         /*Typography*/
@@ -181,7 +197,7 @@
         font-size: 2.2rem;
         font-weight: 550;
         letter-spacing: 1px;
-        color: rgb(248, 247, 246);
+        color: black;
     }
     
     .container > span, .mission__container > span{
@@ -296,18 +312,6 @@
             font-size: 1.5rem;
         }
 
-        .menu__about > .container:nth-child(2){
-            display: block;
-            width: 100%;
-            position: absolute;
-            top: 12%;
-            height: 230px;
-            z-index: -20;
-            background-color: rgba(255, 255, 255, 0.525);
-            border-top: 10px solid rgb(182, 141, 53);
-            border-bottom: 10px solid rgb(182, 141, 53);
-        }
-
         .menu__team-pic > .container:nth-child(2){
             position: absolute;
             top: 18%;
@@ -358,12 +362,6 @@
     .menu__about > .container:first-of-type{
         width: 40%;
         margin-right: 10em;
-    }
-
-    .menu__about > .container:nth-child(2){
-        width: 70%;
-        align-self: flex-end;
-        border-radius: 15px;
     }
 
     .menu__team-pic > .container:nth-child(2){

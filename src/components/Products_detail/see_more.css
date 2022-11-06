@@ -16,14 +16,16 @@
 }
 
 .main__img{
-    width: 70%;
+    width: 100%;
+    align-self: center;
     border-radius: 10px;
 }
 
 .slider__container > img{
-    margin-bottom: .5em;
-    border-radius: 10px;
-    width: 100%;
+    border-radius: 15px;
+    width: 21%;
+    cursor: pointer;
+    padding: .3em;
 }
 
 .return__btn{
@@ -32,6 +34,7 @@
 
 .imgs__container{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
     margin: 1em;
@@ -39,8 +42,8 @@
 
 .slider__container{
     display: flex;
-    flex-direction: column;
-    margin-right: .5em;
+    flex-direction: row;
+    margin-bottom: 1em;
 }
 
 .detailsBtn__container > h3,

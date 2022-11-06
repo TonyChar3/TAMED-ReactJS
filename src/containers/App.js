@@ -5,6 +5,7 @@ import Shop from '../components/shopping/shopping';
 import Mission from '../components/Mission/Mission';
 import Belts from '../components/Products_detail/belts';
 import Straps from '../components/Products_detail/straps';
+import LiftStraps from '../components/Products_detail/liftStraps';
 
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
@@ -31,7 +32,8 @@ function App() {
               <Route path='/shopping' element={<Shop />} />
               <Route path='/mission' element={<Mission />} />
               <Route path="/Products/belts" element={<Belts />}/>
-              <Route path="/Products/straps" element={<Straps />}/>
+              <Route path="/Products/wraps" element={<Straps />}/>
+              <Route path="/Products/straps" element={<LiftStraps />}/>
             </Routes>
           </div>)}
           <Footer />

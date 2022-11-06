@@ -36,7 +36,7 @@ function Navbar(){
         const isActive = useMatch({ path: resolvedPath.pathname, end: true})
         return(
             <li >
-                <Link to={to} {...props} className={`${isActive ? 'current-page' : ''} ${toggleSticky}`}>
+                <Link to={to} {...props}  className={`${isActive ? 'current-page' : ''} ${toggleSticky}`}>
                     { children }
                 </Link>
             </li>
@@ -47,7 +47,7 @@ function Navbar(){
     
     return(
         <nav className={`navbar ${toggleSticky}`} >
-            <div className="brand-title"><Link to="/" className={toggleSticky}>Tamed</Link></div>
+            <div className="brand-title"><Link to="/" className={toggleSticky}><img src="TAMED_img/SideBySide2.png" alt="" /></Link></div>
 
             <a href="/" onClick={handleClick} className={`nav-toggle-btn ${toggleOpen}`} id="nav-toggle-btn">
                 <span className="ham-bar"></span>
