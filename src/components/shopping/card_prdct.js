@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function Card({id, title, price, descript, url, img}){
+function Card({id, title, price, descript, more, url, img}){
     return(
         <div className="product-container">
             <h3 className="shop-item-title">{ title }</h3>
@@ -19,7 +19,8 @@ function Card({id, title, price, descript, url, img}){
                 data-item-custom2-name="Grandeur"
                 data-item-custom2-options="L|XL|M|SM"
                 data-item-taxes="TPS|TVQ">PANIER+</button>
-            <button className="more-btn"><Link to={`/Products/${ id }`}>Voir +</Link></button>  
+            <button className="more-btn"><Link to={`/shopping/${ id }`}>Voir +</Link></button>  
+           
         </div> 
     );
 }

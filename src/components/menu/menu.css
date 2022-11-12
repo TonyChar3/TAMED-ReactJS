@@ -23,10 +23,13 @@
         justify-items: center;
         width: 100%;
         margin-top: 1em;
+    }
 
+    .img-container > a{
+        width: 85%;
     }
     
-    .img-container > img{
+    .img-container > a > img{
         width: 80%;
         box-shadow: 0 15px 20px rgb(182, 141, 53);
         animation: ShiningGold;
@@ -34,7 +37,6 @@
         animation-direction: alternate-reverse;
         animation-iteration-count: infinite;
         animation-duration: 3s;
-
     }
     
     #prodct-img2{
@@ -49,9 +51,11 @@
         animation-duration: 0.6s;
     }
     
+    /*About section*/
+
     .container{
         text-align: center;
-        margin: 1em auto;
+        margin: 0 auto;
         padding: .5em;
         color: black;
         font-size: 1.05rem;
@@ -60,54 +64,45 @@
         font-family: 'Bebas Neue';
     }
 
+    .text__border{
+        padding: .5em;
+        border: 2px solid rgb(182, 141, 53);
+    }
+
     .menu__about{
+        height: 20vh;
         width: 100%;
         position: relative;
         display: flex;
         flex-direction: column;
-        padding: .5em;
-        background-image: url(../../../public/TAMED_img/pexels-leon-ardho-1552252.jpg);
+        justify-content: center;
+        background-image: url(../../../public/TAMED_img/pexels-niragire-tresor-11266949.jpg);
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
         background-blend-mode: multiply;
-        background-color: rgba(38, 38, 38, 0.469);
+        background-color: rgba(38, 38, 38, 0.702);
+    }
+
+    .icons-container{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+        color: white;
+    }
+
+    .icons{
+        text-align: center;
+    }
+
+    .icons > i {
+        padding: .5em;
     }
 
     .menu__about > .container:first-of-type{
-        color: black;
-        background-color: rgba(255, 255, 255, 0.89);
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 15px 20px black;
-    }
-    
-    .menu__team-pic{
         width: 100%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 2px solid magenta;
-    }
-    
-    /*Special container for the Mission page*/
-    .mission__container{
-        width: 80%;
-        text-align: center;
-        margin: 1em auto;
-        padding: .5em;
-        background-color: rgba(96, 94, 94, 0.615);
+        padding: 1em;
         color: black;
-        font-size: 1.05rem;
-        font-family: 'Bebas Neue';
-        border-radius:  15px;
-        box-shadow: 0 15px 20px rgb(182, 141, 53);
-        animation: ShiningGold;
-        animation-timing-function: ease-in;
-        animation-direction: alternate-reverse;
-        animation-iteration-count: infinite;
-        animation-duration: 3s;
+        background-color: rgb(255, 255, 255);
     }
     
     @keyframes ShiningGold{
@@ -120,38 +115,33 @@
             box-shadow: 0 15px 20px rgb(182, 141, 53);
         }
     }
-    
-    .menu__team-pic > .container:nth-child(2){
-        width: 100%;
-        position: absolute;
-        top: 12%;
-        height: 150px;
-        z-index: -20;
-        background-color: rgba(255, 255, 255, 0.525);
-        border-top: 5px solid rgb(182, 141, 53);
-        border-bottom: 5px solid rgb(182, 141, 53);
+
+    .teamImg__container{
+        height: 25vh;
+        margin-top: 1em;
+        background-image: url(.../../../../../public/TAMED_img/seb_Jl2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-    
-    #team-pic{
-        width: 90%;
-        z-index: 10;
-        border-radius: 15px;
-    }
-    
-    .icons-container{
+
+    .icon__border{
+        width: 70%;
+        margin: 0 auto;
+        padding: 1em;
         display: flex;
-        justify-content: space-between;
-        width: 40%;
-        margin: .3em auto;
-        font-size: 1.3rem;
-        color: rgb(182, 141, 53);
-    }
-    
-    .icons-container > a{
-        color: rgb(182, 141, 53);
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+        text-align: center;
     }
     
         /*Typography*/
+    .icons > a{
+        color: white;
+        padding: .5em;
+    }
+
     .top-message{
         width: 80%;
         display: flex;
@@ -164,7 +154,7 @@
         margin-bottom: .5em;
         color: white;
         letter-spacing: 2px;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     #prodct-desc1{
@@ -192,7 +182,7 @@
         background-color: rgb(182, 141, 53);
     }
     
-    .container > h3, .mission__container > h3{
+    .text__border > h3, .mission__container > h3{
         margin-bottom: .5em;
         font-size: 2.2rem;
         font-weight: 550;
@@ -200,14 +190,14 @@
         color: black;
     }
     
-    .container > span, .mission__container > span{
-        color: rgb(204, 154, 47);
+    .text__border > span, .mission__container > span{
+        color: rgb(200, 199, 198);
         font-size: 1.4rem;
     }
     
     #imgGrid__title{
         width: 75%;
-        text-align: center;
+        /* text-align: center; */
         margin: 1em auto;
         border-bottom: 2px solid rgb(182, 141, 53);
         font-size: 1.2rem;
@@ -234,39 +224,6 @@
 
 @media(min-width: 765px){
     /*Index page Content*/
-        /*Layout*/
-
-        #team-pic{
-            width: 70%;
-        }
-
-        .menu__about > .container:first-of-type{
-            width: 60%;
-        }
-
-        .menu__about > .container:nth-child(2){
-            display: block;
-            width: 100%;
-            position: absolute;
-            top: 6%;
-            height: 230px;
-            z-index: -20;
-            background-color: rgba(255, 255, 255, 0.525);
-            border-top: 8px solid rgb(182, 141, 53);
-            border-bottom: 8px solid rgb(182, 141, 53);
-        }
-
-        .menu__team-pic > .container:nth-child(2){
-            width: 100%;
-            position: absolute;
-            top: 12%;
-            height: 230px;
-            z-index: -20;
-            background-color: rgba(255, 255, 255, 0.525);
-            border-top: 8px solid rgb(182, 141, 53);
-            border-bottom: 8px solid rgb(182, 141, 53);
-        }
-
         /*Typography*/
 
         .main-welcome{
@@ -285,16 +242,20 @@
             font-size: 2.2rem;
         }
 
-        .container >h3{
+        .text__border >h3{
             font-size: 2.6rem;
         }
 
+        .text__border > span{
+            font-size: 2.4rem;
+        }
+
         .container{
-            font-size: 1.4rem;
+            font-size: 1.5rem;
         }
 
         .icons-container{
-            font-size: 1.2rem;
+            font-size: 2rem;
         }
 
         #imgGrid__title{
@@ -304,28 +265,37 @@
 
 @media(min-width: 1024px){
     /*Index page content*/
-
+        
         /*Layout*/
+
+        .menu__about{
+            height: 35vh;
+        }
+
+        .icon__border{
+            width: 50%;
+        }
+
         .container{
-            width: 60%;
+            width: 50%;
             padding: 1em;
             font-size: 1.5rem;
         }
 
-        .menu__team-pic > .container:nth-child(2){
-            position: absolute;
-            top: 18%;
-            height: 230px;
-            background-color: rgba(255, 255, 255, 0.525);
-            border-top: 10px solid rgb(182, 141, 53);
-            border-bottom: 10px solid rgb(182, 141, 53);
-        }
-
-        #team-pic{
+        .bottom__container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             width: 100%;
+            padding: 1em 1em 0 1em;
         }
 
-        .img-container > img{
+        .teamImg__container{
+            height: 40vh;
+            width: 50%;
+        }
+
+        .img-container > a > img{
             width: 70%;
         }
 
@@ -390,7 +360,7 @@
         margin: 1.5em auto;
     }
 
-    .img-container > img{
+    .img-container > a > img{
         width: 70%;
     }
 

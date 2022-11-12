@@ -57,7 +57,7 @@ function Navbar(){
             <div className= {`nav-links ${toggleActive}`} id="nav-links">
                 <ul>
                     <CustomLink to="/" className={toggleSticky}>Menu</CustomLink>
-                    <CustomLink to="/shopping" className={toggleSticky}>Magasin</CustomLink>
+                    <CustomLink to="/shopping/article" className={toggleSticky}>Magasin</CustomLink>
                 </ul>
             </div>            
         </nav>

@@ -13,7 +13,7 @@ function Straps(){
         <>
         <div className="plus__container">
             <div className="return__btn">
-                <Link to="/shopping">
+                <Link to="/shopping/article">
                     <i className="bi bi-arrow-left"></i>
                     <span>Retour Magasin</span>
                 </Link>

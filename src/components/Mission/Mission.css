@@ -1,17 +1,60 @@
+
+
 .mission__container{
     position: relative;
-    z-index: -1;
     top: 5vh;
-    width: 80%;
+    width: 90%;
     text-align: center;
     margin: 3em auto;
-    padding: .5em;
-    background-color: rgba(96, 94, 94, 0.615);
+    padding: 1em;
+    border-radius: 15px;
+    background-color: rgba(193, 193, 193, 0.615);
+    box-shadow: 0 10px 10px rgb(33, 32, 32);
+}
+
+.color__brder{
+    padding: 1em;
+    border: 2px solid rgb(182, 141, 53);
     color: black;
     font-size: 1.05rem;
     font-family: 'Bebas Neue';
-    border-radius:  15px;
-    box-shadow: 0 15px 20px rgb(182, 141, 53);
+}
+
+@keyframes ShiningGold{
+
+    0%{
+        box-shadow: 0 5px 10px rgb(33, 32, 32);
+    }
+
+    100%{
+        box-shadow: 0 15px 20px rgb(33, 32, 32);
+    }
+}
+
+.color__brder > h3{
+    margin-bottom: .5em;
+    font-size: 2.2rem;
+    font-weight: 550;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+}
+
+    /*Photos Seb et Jl*/
+.seb__container, .jl__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+.profile__container{
+    width: 40%;
+}
+
+.profile__container > img{
+    width: 100%;
+    box-shadow: 0 15px 20px rgb(33, 32, 32);
     animation: ShiningGold;
     animation-timing-function: ease-in;
     animation-direction: alternate-reverse;
@@ -19,49 +62,80 @@
     animation-duration: 3s;
 }
 
-@keyframes ShiningGold{
-
-    0%{
-        box-shadow: 0 5px 10px rgb(182, 141, 53);
-    }
-
-    100%{
-        box-shadow: 0 15px 20px rgb(182, 141, 53);
-    }
+.descrip__container{
+    text-align: center;
 }
 
-.mission__container > h3{
-    margin-bottom: .5em;
-    font-size: 2.2rem;
-    font-weight: 550;
-    letter-spacing: 1px;
-    color: rgb(248, 247, 246);
+.descrip__container > h4{
+    color: rgb(182, 141, 53);
 }
 
-.mission__container > span{
-    color: rgb(204, 154, 47);
-    font-size: 1.4rem; 
+@media(min-width: 764px){
+
+    .color__brder{
+        font-size: 1.2rem;
+    }
+
+    .mission__container{
+        margin: 4.5em auto;
+    }
+
+    .descrip__container{
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 1024px) {
-    .mission__container{
+
+    .color__brder{
+        font-size: 1.8rem;
+    }
+
+    .color__brder > h3{
+        font-size: 2.5rem;
+    }
+
+    .profile__container{
+        margin-top: 1.5em;
+        width: 30%;
+    }
+
+    .profile__container > img{
+        box-shadow: 0 30px 25px rgb(33, 32, 32);
+    }
+
+    @keyframes ShiningGold{
+
+        0%{
+            box-shadow: 0 15px 20px rgb(33, 32, 32);
+        }
+    
+        100%{
+            box-shadow: 0 30px 25px rgb(33, 32, 32);
+        }
+    }
+
+    .descrip__container{
+        margin-right: 3em;
         padding: 1em;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
-    .mission__container > span{
-        font-size: 1.6rem;
+    .seb__container, .jl__container{
+        width: 50%;
+        justify-content: center;
     }
 
-    .mission__container > h3{
-        font-size: 2.6rem;
+    .desktop__wrapper{
+        display: flex;
+        width: 100%;
+        margin-bottom: 1em;
     }
 }
 
 @media (min-width: 1281px) {
     
     .mission__container{
-        top: 10vh;
         width: 45%;
         padding: 1em;
         margin: 2em auto;

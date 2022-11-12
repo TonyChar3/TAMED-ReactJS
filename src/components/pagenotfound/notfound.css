@@ -1,0 +1,19 @@
+/*404 page styling*/
+    /*Layout*/
+    .page-not-found__container{
+        position: relative;
+        top: 20vh;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /*Typography*/
+    .page-not-found__container > h1{
+        font-size: 3rem;
+    }
+
+    #error__span{
+        font-size: 1.1rem;
+        color: rgb(182, 141, 40);
+    }
