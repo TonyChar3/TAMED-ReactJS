@@ -8,9 +8,9 @@ function Footer(){
             <div className="footer__container">
                 <OtherLinks />
                 <ul className="footer__icons">
-                    <li><a href="/" target="_blank"><i className="bi bi-instagram"></i></a></li>
-                    <li><a href="/"><i className="bi bi-tiktok"></i></a></li>
-                    <li><a href="/"><i className="bi bi-snapchat"></i></a></li>
+                    <li><a href="https://www.instagram.com/tamed_store" target="_blank" rel="noreferrer"><i className="bi bi-instagram"></i></a></li>
+                    <li><a href="/" target="_blank" rel="noreferrer"><i className="bi bi-tiktok"></i></a></li>
+                    <li><a href="/" target="_blank" rel="noreferrer"><i className="bi bi-snapchat"></i></a></li>
                 </ul>
                 <Copyrights />
             </div>

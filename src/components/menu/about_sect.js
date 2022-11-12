@@ -7,7 +7,7 @@ function About(){
                     <div className="icons-container">
                         <h3>Viens nous suivre</h3>
                         <div className="icons">
-                            <a href="/" target="_blank"><i className="bi bi-instagram"></i></a>
+                            <a href="https://www.instagram.com/tamed_store" target="_blank" rel="noreferrer"><i className="bi bi-instagram"></i></a>
                             <i className="bi bi-tiktok"></i>
                             <i className="bi bi-snapchat"></i>
                         </div>

@@ -49,12 +49,21 @@ function Navbar(){
         <nav className={`navbar ${toggleSticky}`} >
             <div className="brand-title"><Link to="/" className={toggleSticky}><img src="TAMED_img/SideBySide2.png" alt="" /></Link></div>
 
-            <a href="/" onClick={handleClick} className={`nav-toggle-btn ${toggleOpen}`} id="nav-toggle-btn">
-                <span className="ham-bar"></span>
-                <span className="ham-bar"></span>
-                <span className="ham-bar"></span>
-            </a>
+
+            <div className="btnNIcon__container">
+                <div className="cartIcon__container">
+                    <i className="bi bi-cart3 snipcart-checkout snipcart-items-count"></i>
+                </div>
+                <a href="/" onClick={handleClick} className={`nav-toggle-btn ${toggleOpen}`} id="nav-toggle-btn">
+
+                    <span className="ham-bar"></span>
+                    <span className="ham-bar"></span>
+                    <span className="ham-bar"></span>
+                </a>
+            </div>
+
             <div className= {`nav-links ${toggleActive}`} id="nav-links">
+
                 <ul>
                     <CustomLink to="/" className={toggleSticky}>Menu</CustomLink>
                     <CustomLink to="/shopping/article" className={toggleSticky}>Magasin</CustomLink>

@@ -1,21 +1,14 @@
 
 /*Shop page*/
     /*Layout*/
-    .cart-i-container{
-        height: 20vh;
-        display: flex;
-        justify-content: flex-end;
-        padding: 1em;
-    }
     
     .shop-container{
         max-width: 80%;
         display: flex;
-        column-gap: 2.5em;
-        row-gap: 4em;
+        row-gap: 2em;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin: .5em auto 1.5em auto;
+        margin: 6em auto 1.5em auto;
         font-family: 'Bebas Neue';
     }
     
@@ -26,21 +19,21 @@
         width: 360px;
         align-self: normal;
         background: #4a49492d;
-        border: .2px solid rgba(185, 185, 185, 0.438);
-        border-radius: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border: .2px solid rgb(182, 141, 40);
         backdrop-filter:blur(5px);
         filter:drop-shadow(0 1.25rem 1.25rem rgba(255, 255, 255, 0.623));
-        padding: 1em;
         animation: LoadinIn;
         animation-duration: 0.3s;
         transition: all 0.3s ease;
     }
     
     .product-container > img{
-        border-radius: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         border: none;
         width: 100%;
-        height: 250px;
         transition: 0.3s;
     }
     
@@ -55,6 +48,12 @@
         align-items: center;
         font-size: 1.3rem;
     }
+
+    .shopCardBtn__container{
+        display: flex;
+        justify-content: flex-start;
+        padding: .5em;
+    }
     
         /*Typography*/
     .shop-item-title{
@@ -67,23 +66,20 @@
         margin-bottom: .5em;
     }
     
-    .cart-i-container i{
-        align-self: center;
-        font-size: 1.5rem;
-        color: rgb(182, 141, 53);
-        margin-top: 1.5em;
-    }
-    
-    .product-container > p{
-        padding: .5em;
-        margin-top: .3em;
-        font-size: 1.05rem;
+    .product-container > p:first-of-type{
+        margin: .3em 0 0 .2em;
+        font-size: 1.8rem;
         color:black;
-        border-bottom: 3px solid rgb(182, 141, 53);
+    }
+
+    .product-container > span{
+        margin: 0 0 0 .2em;
+        font-size: 0.96rem;
+        color: rgba(29, 154, 29, 0.692);
     }
     
     .product-container > h6{
-        color: white;
+        color: rgb(182, 141, 40);
         font-size: 2rem;
         margin: .3em 0 .2em .2em;
     }
@@ -92,30 +88,29 @@
     .prodct-btn{
         width: 100px;
         padding: .05em;
-        border-radius: 15px;
-        border: 2px solid white;
+        border: 2px solid rgb(182, 141, 53);
         font-family: 'Bebas Neue';
-        font-size: 1.1rem;
-        color: black;
-        background-color: rgb(182, 141, 53);
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        color: white;
+        background-color: rgba(202, 201, 199, 0.685);
         cursor: pointer;
     }
 
     .more-btn{
         width: 80px;
-        margin-top: .5em;
         padding: .05em;
-        border-radius: 15px;
-        border: 2px solid white;
+        margin-left: 1em;
+        border: 2px solid rgb(182, 141, 53);
         font-family: 'Bebas Neue';
-        font-size: 1.1rem;
-        color: black;
-        background-color: rgb(182, 141, 53);
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        background-color: rgba(202, 201, 199, 0.685);
         cursor: pointer;
     }
 
     .more-btn > a{
-        color: black;
+        color: white;
     }
 
     button{
@@ -253,37 +248,31 @@
     }
 
 @media (min-width: 765px){
-    /*Shopping page content*/
         /*Typography*/
-    .cart-i-container i{
-        font-size: 2rem;
+    .shop-container{
+        max-width: 80%;
+        margin: 7em auto 2em auto;
     }
 
-    .shop-container{
-        max-width: 100%;
+    .product-container{
+         width: 46%;
     }
 }
 
 @media (min-width: 1024px){
-    /*Shop page*/
         /*Layout*/
-    .cart-i-container{
-        height: 15vh;
-        margin-right: 2em;
-        font-size: 1.6rem;
-    }
-    
     .seeMore{
         transform: scale(1.5);
+    }
+
+    .product-container{
+        width: 25%;
     }
 }
 
 @media (min-width: 1281px) {
-    .cart-i-container{
-        height: 25vh;
-    }
 
     .shop-container{
-        max-width: 80%;
+        max-width: 70%;
     }
 }
