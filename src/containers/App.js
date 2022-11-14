@@ -8,6 +8,8 @@ import Straps from '../components/Products_detail/straps';
 import LiftStraps from '../components/Products_detail/liftStraps';
 import Pagenotfound from '../components/pagenotfound/pageNotFound';
 import Articles from '../components/shopping/articles';
+import Whitebelt from '../components/Products_detail/whitebelt';
+import Kneewraps from '../components/Products_detail/kneewraps';
 
 import './App.css';
 import { Route, Routes} from 'react-router-dom';
@@ -37,6 +39,9 @@ function App() {
                 <Route path="belts" element={<Belts />}/>
                 <Route path="wraps" element={<Straps />}/>
                 <Route path="straps" element={<LiftStraps />}/>
+                <Route path="white_belt" element={<Whitebelt />} />
+                <Route path="knee_wraps" element={<Kneewraps />} />
+
               </Route>
               <Route path="*" element={<Pagenotfound />} />
             </Routes>

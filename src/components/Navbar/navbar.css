@@ -2,7 +2,7 @@
 
     /*Layout*/
     .navbar{
-        position: absolute;
+        position: fixed;
         left: 0;
         right: 0;
         top:0;
@@ -108,7 +108,7 @@
     .btnNIcon__container{
         position: absolute;
         right:5px;
-        top: 25px;
+        top: 15px;
         width: 30%;
         display: flex;
         justify-content: center;
@@ -165,10 +165,10 @@
 
     /*Tablets*/
     @media(min-width: 765px){
-        /*Nav*/
         /*Layout*/
         .navbar{
             background-color: transparent;
+            height: 9vh;
         }
         
         .nav-links.active{
@@ -182,13 +182,16 @@
 
         .nav-links{
             font-size: 1.2rem;
-        }    
+        } 
+        
+        .btnNIcon__container{
+            top: 22px;
+            justify-content: space-around;
+        }
     }
 
     /*Low resolution Desktops*/
     @media (min-width: 1024px){
-                /*Nav*/
-
             /*Layout*/
         .navbar{
             flex-direction: row;
@@ -245,7 +248,7 @@
 
     /*High resolution desktops*/
     @media (min-width: 1281px){
-            /*Nav*/
+
         .nav-links li{
             margin-left: 2em;
         }

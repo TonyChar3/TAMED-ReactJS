@@ -40,13 +40,13 @@ function LiftStraps(){
                 <div className="NamePrice__container">
                     
                     <h3>Sangles de levage</h3>
-                    <h4>- $150.99 -</h4>
+                    <h4>- $20.00 -</h4>
                 </div>
 
                 <button className="prodct-btn snipcart-add-item"
                 id="straps"
                 data-item-id="straps"
-                data-item-price="150.99"
+                data-item-price="20.00"
                 data-item-url="/"
                 data-item-description="Bandes en tissue tressé double, capable de supporter votre poignet tout en gardant un certain comfort lors de PR."
                 data-item-image="/TAMED_img/IMG_9872-.jpg"

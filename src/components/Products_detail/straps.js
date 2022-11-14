@@ -36,19 +36,19 @@ function Straps(){
                 </div>
                 <div className="NamePrice__container">
                     <h3>Bandes de poignet</h3>
-                    <h4>- $150.99 -</h4>
+                    <h4>- $25.00 -</h4>
                 </div>
 
                 <button className="prodct-btn snipcart-add-item"
                 id="wraps"
                 data-item-id="wraps"
-                data-item-price="150.99"
+                data-item-price="25.00"
                 data-item-url="/"
                 data-item-description="Ceinture de support, qualité suppérieure en cuire et grosse attache en aluminium pour tenir le tout."
                 data-item-image="/TAMED_img/385848283.PNG"
                 data-item-name="Bandes de poignet"
                 data-item-custom1-name="Couleur"
-                data-item-custom1-options="Rouge|Or|Blanche"
+                data-item-custom1-options="Rouge|Noire"
                 data-item-taxes="TPS|TVQ">PANIER+</button>
             </div>
         </div>

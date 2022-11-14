@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import './navbar.css';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import Logo from '../../TAMED_logo/SideBySide2.png'
 
 function Navbar(){
     // useState hook for the nav pop-up and animation
@@ -36,7 +37,7 @@ function Navbar(){
         const isActive = useMatch({ path: resolvedPath.pathname, end: true})
         return(
             <li >
-                <Link to={to} {...props}  className={`${isActive ? 'current-page' : ''} ${toggleSticky}`}>
+                <Link to={to} {...props}  className={`${isActive ? 'current-page' : ''}`}>
                     { children }
                 </Link>
             </li>
@@ -47,7 +48,7 @@ function Navbar(){
     
     return(
         <nav className={`navbar ${toggleSticky}`} >
-            <div className="brand-title"><Link to="/" className={toggleSticky}><img src="TAMED_img/SideBySide2.png" alt="" /></Link></div>
+            <div className="brand-title"><Link to="/" className={toggleSticky}><img src={Logo} alt="" /></Link></div>
 
 
             <div className="btnNIcon__container">
@@ -65,8 +66,8 @@ function Navbar(){
             <div className= {`nav-links ${toggleActive}`} id="nav-links">
 
                 <ul>
-                    <CustomLink to="/" className={toggleSticky}>Menu</CustomLink>
-                    <CustomLink to="/shopping/article" className={toggleSticky}>Magasin</CustomLink>
+                    <CustomLink to="/">Menu</CustomLink>
+                    <CustomLink to="/shopping/article">Magasin</CustomLink>
                 </ul>
             </div>            
         </nav>

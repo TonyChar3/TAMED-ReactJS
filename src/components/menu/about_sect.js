@@ -27,7 +27,6 @@ function About(){
                 </div>
                 <div className="teamImg__container"></div>
             </div>
-
         </>
 
     );

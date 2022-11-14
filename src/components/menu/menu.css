@@ -1,5 +1,16 @@
 /*Index page content*/
 
+@keyframes ShiningGold{
+    
+    0%{
+        box-shadow: 0 5px 10px rgb(182, 141, 53);
+    }
+
+    100%{
+        box-shadow: 0 15px 20px rgb(182, 141, 53);
+    }
+}
+
     /*Layout*/
     .top-page-container{
         display: flex;
@@ -7,13 +18,20 @@
         align-items: center;
         justify-content: space-around;
         height: 100vh;
-        background-image: url(../../../public/TAMED_img/Image[303].jpeg);
+        background-image: url(../../../public/TAMED_img/Main2.jpeg);
         background-blend-mode: multiply;
         background-size: cover;
         background-position: 50% 20%;
         background-attachment: fixed;
         background-color: rgba(0, 0, 0, 0.097);
         transition: 0.3s;
+    }
+
+    .top-message{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .img-container{
@@ -53,6 +71,7 @@
     
     /*About section*/
 
+        /*Layout*/
     .container{
         text-align: center;
         margin: 0 auto;
@@ -104,17 +123,6 @@
         color: black;
         background-color: rgb(255, 255, 255);
     }
-    
-    @keyframes ShiningGold{
-    
-        0%{
-            box-shadow: 0 5px 10px rgb(182, 141, 53);
-        }
-    
-        100%{
-            box-shadow: 0 15px 20px rgb(182, 141, 53);
-        }
-    }
 
     .teamImg__container{
         height: 25vh;
@@ -142,19 +150,13 @@
         padding: .5em;
     }
 
-    .top-message{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .main-welcome{
         margin: 0;
         margin-bottom: .5em;
         color: white;
         letter-spacing: 2px;
         font-size: 2.5rem;
+        text-align: center;
     }
     
     #prodct-desc1{
